@@ -1,0 +1,14 @@
+node_modules
+.env
+*.log
+.DS_Store
+dist
+coverage
+.vercel
+backend/data/workspaces/
+evidence/browser/
+sites/fielddesk/.sites-runtime/
+sites/fielddesk/.wrangler/
+sites/fielddesk/.vinext/
+data/reports.json
+!backend/data/.gitkeep

@@ -1,0 +1,13 @@
+{
+  "name": "fielddesk-integrador",
+  "version": "2.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node backend/src/server.js",
+    "dev": "npm --prefix frontend run dev",
+    "dev:api": "npm --prefix backend run dev",
+    "build": "npm --prefix frontend run build",
+    "test": "npm --prefix backend test"
+  },
+  "engines": { "node": ">=22" }
+}

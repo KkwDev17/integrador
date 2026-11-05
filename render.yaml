@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: fielddesk
+    runtime: node
+    plan: free
+    buildCommand: npm ci --prefix frontend --include=dev && npm ci --prefix backend --omit=dev && npm run build
+    startCommand: npm start
+    healthCheckPath: /api/health
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: NODE_VERSION
+        value: "22"
